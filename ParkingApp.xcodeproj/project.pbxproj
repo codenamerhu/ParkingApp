@@ -17,6 +17,7 @@
 		CEB4743B25BC23CE0066A99C /* PaymentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4743A25BC23CE0066A99C /* PaymentError.swift */; };
 		CEB4744625BC2B990066A99C /* ParkingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4744525BC2B990066A99C /* ParkingAppTests.swift */; };
 		CEB4745025BC2BE40066A99C /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4744F25BC2BE40066A99C /* Payment.swift */; };
+		CEB4745425BC604D0066A99C /* MockUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4745325BC604D0066A99C /* MockUpData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CEB4744525BC2B990066A99C /* ParkingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingAppTests.swift; sourceTree = "<group>"; };
 		CEB4744725BC2B990066A99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB4744F25BC2BE40066A99C /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		CEB4745325BC604D0066A99C /* MockUpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUpData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				CEB4742B25BBFB550066A99C /* ParkingApp.xcdatamodeld */,
 				CEB4743A25BC23CE0066A99C /* PaymentError.swift */,
 				CEB4744F25BC2BE40066A99C /* Payment.swift */,
+				CEB4745325BC604D0066A99C /* MockUpData.swift */,
 			);
 			path = ParkingApp;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				CEB4743B25BC23CE0066A99C /* PaymentError.swift in Sources */,
 				CEB4742D25BBFB550066A99C /* ParkingApp.xcdatamodeld in Sources */,
 				CEB4742725BBFB550066A99C /* PayForParkingViewController.swift in Sources */,
+				CEB4745425BC604D0066A99C /* MockUpData.swift in Sources */,
 				CEB4742325BBFB550066A99C /* AppDelegate.swift in Sources */,
 				CEB4745025BC2BE40066A99C /* Payment.swift in Sources */,
 				CEB4742525BBFB550066A99C /* SceneDelegate.swift in Sources */,

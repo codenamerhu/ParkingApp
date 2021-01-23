@@ -8,20 +8,21 @@
 import UIKit
 
 class PayForParkingViewController: UIViewController {
-
+    
     let payment = Payment()
+    let parkedHours = MockUpdata()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        /*
         do {
             let change = try payment.processPayment(for: 0, for: 50)
             print(change)
         } catch {
             print(error)
-        }
+        } */
     }
-
 
 }
 
