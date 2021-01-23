@@ -14,6 +14,7 @@
 		CEB4742D25BBFB550066A99C /* ParkingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEB4742B25BBFB550066A99C /* ParkingApp.xcdatamodeld */; };
 		CEB4742F25BBFB5A0066A99C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB4742E25BBFB5A0066A99C /* Assets.xcassets */; };
 		CEB4743225BBFB5A0066A99C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB4743025BBFB5A0066A99C /* LaunchScreen.storyboard */; };
+		CEB4743B25BC23CE0066A99C /* PaymentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4743A25BC23CE0066A99C /* PaymentError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CEB4742E25BBFB5A0066A99C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB4743125BBFB5A0066A99C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB4743325BBFB5A0066A99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB4743A25BC23CE0066A99C /* PaymentError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				CEB4743025BBFB5A0066A99C /* LaunchScreen.storyboard */,
 				CEB4743325BBFB5A0066A99C /* Info.plist */,
 				CEB4742B25BBFB550066A99C /* ParkingApp.xcdatamodeld */,
+				CEB4743A25BC23CE0066A99C /* PaymentError.swift */,
 			);
 			path = ParkingApp;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB4743B25BC23CE0066A99C /* PaymentError.swift in Sources */,
 				CEB4742D25BBFB550066A99C /* ParkingApp.xcdatamodeld in Sources */,
 				CEB4742725BBFB550066A99C /* ViewController.swift in Sources */,
 				CEB4742325BBFB550066A99C /* AppDelegate.swift in Sources */,
