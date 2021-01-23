@@ -10,24 +10,24 @@ import XCTest
 
 class ParkingAppTests: XCTestCase {
 
+    var sut: Payment!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
+       sut = Payment()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+        try super.tearDownWithError()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testPayment() throws {
+        
+        XCTAssertEqual(try sut.processPayment(for: 50, for: 50), "\(0.0) ZAR", "Test passed, R50.0 - R50.0 is R0.0")
+        XCTAssertEqual(try sut.processPayment(for: 50, for: 30), "\(20.0) ZAR", "Tessed passed, R50.0 - R30.0 is R20.0")
+        XCTAssertThrowsError(try sut.processPayment(for: 0, for: 10)) // test passes, error thrown when amount paying is Zero and bellow
+        XCTAssertThrowsError(try sut.processPayment(for: 30, for: 50))// test passes, error thrown when amount paying is less than the amount duducting
     }
 
 }
