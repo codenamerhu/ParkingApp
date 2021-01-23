@@ -19,6 +19,7 @@
 		CEB4745025BC2BE40066A99C /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4744F25BC2BE40066A99C /* Payment.swift */; };
 		CEB4745425BC604D0066A99C /* MockUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4745325BC604D0066A99C /* MockUpData.swift */; };
 		CEB4745E25BC89550066A99C /* ParkingHourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4745D25BC89550066A99C /* ParkingHourTests.swift */; };
+		CEB4746925BC98FF0066A99C /* PaymentSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4746825BC98FF0066A99C /* PaymentSuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		CEB4745B25BC89550066A99C /* ParkingHourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingHourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB4745D25BC89550066A99C /* ParkingHourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingHourTests.swift; sourceTree = "<group>"; };
 		CEB4745F25BC89550066A99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB4746825BC98FF0066A99C /* PaymentSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				CEB4743A25BC23CE0066A99C /* PaymentError.swift */,
 				CEB4744F25BC2BE40066A99C /* Payment.swift */,
 				CEB4745325BC604D0066A99C /* MockUpData.swift */,
+				CEB4746825BC98FF0066A99C /* PaymentSuccessViewController.swift */,
 			);
 			path = ParkingApp;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				CEB4742325BBFB550066A99C /* AppDelegate.swift in Sources */,
 				CEB4745025BC2BE40066A99C /* Payment.swift in Sources */,
 				CEB4742525BBFB550066A99C /* SceneDelegate.swift in Sources */,
+				CEB4746925BC98FF0066A99C /* PaymentSuccessViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +457,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33W4J75NUM;
+				DEVELOPMENT_TEAM = W5XNMDMSNN;
 				INFOPLIST_FILE = ParkingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -472,7 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33W4J75NUM;
+				DEVELOPMENT_TEAM = W5XNMDMSNN;
 				INFOPLIST_FILE = ParkingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

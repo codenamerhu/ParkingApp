@@ -15,20 +15,26 @@ class PayForParkingViewController: UIViewController {
     var amountDeducting = 0.00
     
     @IBOutlet weak var amountPayingTextField: UITextField!
+    @IBOutlet weak var pricingStackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configViews()
         parkedHours = mock.fakeParkedHours()
-        print("\(parkedHours) hours")
         
+        NotificationCenter.default.addObserver(self, selector: #selector(PayForParkingViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(PayForParkingViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
     }
     
     func configViews() {
+        self.navigationController?.isNavigationBarHidden = true
         amountPayingTextField.keyboardType = .numberPad
+        
     }
+    
+    
     
     @IBAction func initiatePayment(_ sender: UIButton ) {
         
@@ -47,7 +53,12 @@ class PayForParkingViewController: UIViewController {
             
             let change = try payment.processPayment(for: Double(amount)!, for: calculateAmountDeducting(for: parkedHours))
             
-            print(change)
+            let successViewController = PaymentSuccessViewController()
+            successViewController.change = change
+            successViewController.amountpPayed = amount
+            
+            self.navigationController?.pushViewController(successViewController, animated: true)
+            
         } catch {
             print(error)
         }
@@ -80,4 +91,11 @@ extension PayForParkingViewController {
         
         return amountDeducting
     }
+}
+
+extension PayForParkingViewController {
+    
+    @objc func keyboardWillShow(notification: NSNotification) {}
+    @objc func keyboardWillHide(notification: NSNotification) {}
+
 }
