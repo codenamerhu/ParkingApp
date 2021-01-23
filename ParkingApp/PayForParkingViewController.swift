@@ -23,8 +23,8 @@ class PayForParkingViewController: UIViewController {
         configViews()
         parkedHours = mock.fakeParkedHours()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(PayForParkingViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(PayForParkingViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(PayForParkingViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(PayForParkingViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
     
