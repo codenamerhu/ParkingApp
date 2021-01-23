@@ -18,10 +18,18 @@
 		CEB4744625BC2B990066A99C /* ParkingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4744525BC2B990066A99C /* ParkingAppTests.swift */; };
 		CEB4745025BC2BE40066A99C /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4744F25BC2BE40066A99C /* Payment.swift */; };
 		CEB4745425BC604D0066A99C /* MockUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4745325BC604D0066A99C /* MockUpData.swift */; };
+		CEB4745E25BC89550066A99C /* ParkingHourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4745D25BC89550066A99C /* ParkingHourTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CEB4744825BC2B990066A99C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB4741725BBFB540066A99C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB4741E25BBFB540066A99C;
+			remoteInfo = ParkingApp;
+		};
+		CEB4746025BC89550066A99C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEB4741725BBFB540066A99C /* Project object */;
 			proxyType = 1;
@@ -46,6 +54,9 @@
 		CEB4744725BC2B990066A99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB4744F25BC2BE40066A99C /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		CEB4745325BC604D0066A99C /* MockUpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUpData.swift; sourceTree = "<group>"; };
+		CEB4745B25BC89550066A99C /* ParkingHourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingHourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB4745D25BC89550066A99C /* ParkingHourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingHourTests.swift; sourceTree = "<group>"; };
+		CEB4745F25BC89550066A99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +74,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEB4745825BC89550066A99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +89,7 @@
 			children = (
 				CEB4742125BBFB550066A99C /* ParkingApp */,
 				CEB4744425BC2B990066A99C /* ParkingAppTests */,
+				CEB4745C25BC89550066A99C /* ParkingHourTests */,
 				CEB4742025BBFB550066A99C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +99,7 @@
 			children = (
 				CEB4741F25BBFB550066A99C /* ParkingApp.app */,
 				CEB4744325BC2B980066A99C /* ParkingAppTests.xctest */,
+				CEB4745B25BC89550066A99C /* ParkingHourTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +129,15 @@
 				CEB4744725BC2B990066A99C /* Info.plist */,
 			);
 			path = ParkingAppTests;
+			sourceTree = "<group>";
+		};
+		CEB4745C25BC89550066A99C /* ParkingHourTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEB4745D25BC89550066A99C /* ParkingHourTests.swift */,
+				CEB4745F25BC89550066A99C /* Info.plist */,
+			);
+			path = ParkingHourTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +178,24 @@
 			productReference = CEB4744325BC2B980066A99C /* ParkingAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CEB4745A25BC89550066A99C /* ParkingHourTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB4746225BC89550066A99C /* Build configuration list for PBXNativeTarget "ParkingHourTests" */;
+			buildPhases = (
+				CEB4745725BC89550066A99C /* Sources */,
+				CEB4745825BC89550066A99C /* Frameworks */,
+				CEB4745925BC89550066A99C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEB4746125BC89550066A99C /* PBXTargetDependency */,
+			);
+			name = ParkingHourTests;
+			productName = ParkingHourTests;
+			productReference = CEB4745B25BC89550066A99C /* ParkingHourTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,6 +209,10 @@
 						CreatedOnToolsVersion = 12.3;
 					};
 					CEB4744225BC2B980066A99C = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CEB4741E25BBFB540066A99C;
+					};
+					CEB4745A25BC89550066A99C = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = CEB4741E25BBFB540066A99C;
 					};
@@ -182,6 +233,7 @@
 			targets = (
 				CEB4741E25BBFB540066A99C /* ParkingApp */,
 				CEB4744225BC2B980066A99C /* ParkingAppTests */,
+				CEB4745A25BC89550066A99C /* ParkingHourTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +250,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CEB4744125BC2B980066A99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB4745925BC89550066A99C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,6 +288,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEB4745725BC89550066A99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB4745E25BC89550066A99C /* ParkingHourTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +303,11 @@
 			isa = PBXTargetDependency;
 			target = CEB4741E25BBFB540066A99C /* ParkingApp */;
 			targetProxy = CEB4744825BC2B990066A99C /* PBXContainerItemProxy */;
+		};
+		CEB4746125BC89550066A99C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB4741E25BBFB540066A99C /* ParkingApp */;
+			targetProxy = CEB4746025BC89550066A99C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -453,6 +525,46 @@
 			};
 			name = Release;
 		};
+		CEB4746325BC89550066A99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33W4J75NUM;
+				INFOPLIST_FILE = ParkingHourTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codenamerhu.ParkingHourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingApp.app/ParkingApp";
+			};
+			name = Debug;
+		};
+		CEB4746425BC89550066A99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33W4J75NUM;
+				INFOPLIST_FILE = ParkingHourTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codenamerhu.ParkingHourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingApp.app/ParkingApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -479,6 +591,15 @@
 			buildConfigurations = (
 				CEB4744B25BC2B990066A99C /* Debug */,
 				CEB4744C25BC2B990066A99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB4746225BC89550066A99C /* Build configuration list for PBXNativeTarget "ParkingHourTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB4746325BC89550066A99C /* Debug */,
+				CEB4746425BC89550066A99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

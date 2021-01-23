@@ -29,5 +29,6 @@ class ParkingAppTests: XCTestCase {
         XCTAssertThrowsError(try sut.processPayment(for: 0, for: 10)) // test passes, error thrown when amount paying is Zero and bellow
         XCTAssertThrowsError(try sut.processPayment(for: 30, for: 50))// test passes, error thrown when amount paying is less than the amount duducting
     }
+    
 
 }

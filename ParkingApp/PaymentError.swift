@@ -10,4 +10,6 @@ import Foundation
 enum PaymentError: Error {
     case notEnoughFundsError
     case cannotBeZeroError
+    case emptyFieldError
+    case invalidValue
 }
