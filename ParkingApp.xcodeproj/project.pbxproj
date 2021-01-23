@@ -15,7 +15,19 @@
 		CEB4742F25BBFB5A0066A99C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB4742E25BBFB5A0066A99C /* Assets.xcassets */; };
 		CEB4743225BBFB5A0066A99C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB4743025BBFB5A0066A99C /* LaunchScreen.storyboard */; };
 		CEB4743B25BC23CE0066A99C /* PaymentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4743A25BC23CE0066A99C /* PaymentError.swift */; };
+		CEB4744625BC2B990066A99C /* ParkingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4744525BC2B990066A99C /* ParkingAppTests.swift */; };
+		CEB4745025BC2BE40066A99C /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4744F25BC2BE40066A99C /* Payment.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEB4744825BC2B990066A99C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB4741725BBFB540066A99C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB4741E25BBFB540066A99C;
+			remoteInfo = ParkingApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CEB4741F25BBFB550066A99C /* ParkingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +40,21 @@
 		CEB4743125BBFB5A0066A99C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB4743325BBFB5A0066A99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB4743A25BC23CE0066A99C /* PaymentError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentError.swift; sourceTree = "<group>"; };
+		CEB4744325BC2B980066A99C /* ParkingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB4744525BC2B990066A99C /* ParkingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingAppTests.swift; sourceTree = "<group>"; };
+		CEB4744725BC2B990066A99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB4744F25BC2BE40066A99C /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CEB4741C25BBFB540066A99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB4744025BC2B980066A99C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB4742125BBFB550066A99C /* ParkingApp */,
+				CEB4744425BC2B990066A99C /* ParkingAppTests */,
 				CEB4742025BBFB550066A99C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB4741F25BBFB550066A99C /* ParkingApp.app */,
+				CEB4744325BC2B980066A99C /* ParkingAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,8 +94,18 @@
 				CEB4743325BBFB5A0066A99C /* Info.plist */,
 				CEB4742B25BBFB550066A99C /* ParkingApp.xcdatamodeld */,
 				CEB4743A25BC23CE0066A99C /* PaymentError.swift */,
+				CEB4744F25BC2BE40066A99C /* Payment.swift */,
 			);
 			path = ParkingApp;
+			sourceTree = "<group>";
+		};
+		CEB4744425BC2B990066A99C /* ParkingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEB4744525BC2B990066A99C /* ParkingAppTests.swift */,
+				CEB4744725BC2B990066A99C /* Info.plist */,
+			);
+			path = ParkingAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +128,24 @@
 			productReference = CEB4741F25BBFB550066A99C /* ParkingApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CEB4744225BC2B980066A99C /* ParkingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB4744A25BC2B990066A99C /* Build configuration list for PBXNativeTarget "ParkingAppTests" */;
+			buildPhases = (
+				CEB4743F25BC2B980066A99C /* Sources */,
+				CEB4744025BC2B980066A99C /* Frameworks */,
+				CEB4744125BC2B980066A99C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEB4744925BC2B990066A99C /* PBXTargetDependency */,
+			);
+			name = ParkingAppTests;
+			productName = ParkingAppTests;
+			productReference = CEB4744325BC2B980066A99C /* ParkingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +157,10 @@
 				TargetAttributes = {
 					CEB4741E25BBFB540066A99C = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					CEB4744225BC2B980066A99C = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CEB4741E25BBFB540066A99C;
 					};
 				};
 			};
@@ -121,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				CEB4741E25BBFB540066A99C /* ParkingApp */,
+				CEB4744225BC2B980066A99C /* ParkingAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +194,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEB4744125BC2B980066A99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -147,11 +212,28 @@
 				CEB4742D25BBFB550066A99C /* ParkingApp.xcdatamodeld in Sources */,
 				CEB4742725BBFB550066A99C /* PayForParkingViewController.swift in Sources */,
 				CEB4742325BBFB550066A99C /* AppDelegate.swift in Sources */,
+				CEB4745025BC2BE40066A99C /* Payment.swift in Sources */,
 				CEB4742525BBFB550066A99C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEB4743F25BC2B980066A99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB4744625BC2B990066A99C /* ParkingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEB4744925BC2B990066A99C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB4741E25BBFB540066A99C /* ParkingApp */;
+			targetProxy = CEB4744825BC2B990066A99C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEB4742825BBFB550066A99C /* Main.storyboard */ = {
@@ -327,6 +409,46 @@
 			};
 			name = Release;
 		};
+		CEB4744B25BC2B990066A99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33W4J75NUM;
+				INFOPLIST_FILE = ParkingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codenamerhu.ParkingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingApp.app/ParkingApp";
+			};
+			name = Debug;
+		};
+		CEB4744C25BC2B990066A99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33W4J75NUM;
+				INFOPLIST_FILE = ParkingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codenamerhu.ParkingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingApp.app/ParkingApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,6 +466,15 @@
 			buildConfigurations = (
 				CEB4743725BBFB5A0066A99C /* Debug */,
 				CEB4743825BBFB5A0066A99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB4744A25BC2B990066A99C /* Build configuration list for PBXNativeTarget "ParkingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB4744B25BC2B990066A99C /* Debug */,
+				CEB4744C25BC2B990066A99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
