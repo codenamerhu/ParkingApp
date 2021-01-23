@@ -58,16 +58,24 @@ class PayForParkingViewController: UIViewController {
 extension PayForParkingViewController {
     
     func calculateAmountDeducting(for hours: Double) -> Double{
-        if hours < 3 {
-            amountDeducting = 10.0
-        } else if hours >= 3 || hours < 5 {
-            amountDeducting = 20.0
-        } else if hours >= 5 || hours < 7 {
+        if hours >= 9 {
+            amountDeducting = 50.0
+        }
+        
+        else if hours >= 7 {
+            amountDeducting = 40.0
+        }
+        
+        else if hours >= 5 {
             amountDeducting = 30.0
-        } else if hours >= 7 || hours < 9 {
-            amountDeducting = 40
-        } else {
-            amountDeducting = 50
+        }
+        
+        else if hours >= 3 {
+            amountDeducting = 20
+        }
+        
+        else {
+            amountDeducting = 10
         }
         
         return amountDeducting
