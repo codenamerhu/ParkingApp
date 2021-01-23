@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CEB4742325BBFB550066A99C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4742225BBFB550066A99C /* AppDelegate.swift */; };
 		CEB4742525BBFB550066A99C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4742425BBFB550066A99C /* SceneDelegate.swift */; };
-		CEB4742725BBFB550066A99C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4742625BBFB550066A99C /* ViewController.swift */; };
+		CEB4742725BBFB550066A99C /* PayForParkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4742625BBFB550066A99C /* PayForParkingViewController.swift */; };
 		CEB4742A25BBFB550066A99C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB4742825BBFB550066A99C /* Main.storyboard */; };
 		CEB4742D25BBFB550066A99C /* ParkingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEB4742B25BBFB550066A99C /* ParkingApp.xcdatamodeld */; };
 		CEB4742F25BBFB5A0066A99C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB4742E25BBFB5A0066A99C /* Assets.xcassets */; };
@@ -21,7 +21,7 @@
 		CEB4741F25BBFB550066A99C /* ParkingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB4742225BBFB550066A99C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB4742425BBFB550066A99C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEB4742625BBFB550066A99C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEB4742625BBFB550066A99C /* PayForParkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayForParkingViewController.swift; sourceTree = "<group>"; };
 		CEB4742925BBFB550066A99C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEB4742C25BBFB550066A99C /* ParkingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ParkingApp.xcdatamodel; sourceTree = "<group>"; };
 		CEB4742E25BBFB5A0066A99C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			children = (
 				CEB4742225BBFB550066A99C /* AppDelegate.swift */,
 				CEB4742425BBFB550066A99C /* SceneDelegate.swift */,
-				CEB4742625BBFB550066A99C /* ViewController.swift */,
+				CEB4742625BBFB550066A99C /* PayForParkingViewController.swift */,
 				CEB4742825BBFB550066A99C /* Main.storyboard */,
 				CEB4742E25BBFB5A0066A99C /* Assets.xcassets */,
 				CEB4743025BBFB5A0066A99C /* LaunchScreen.storyboard */,
@@ -145,7 +145,7 @@
 			files = (
 				CEB4743B25BC23CE0066A99C /* PaymentError.swift in Sources */,
 				CEB4742D25BBFB550066A99C /* ParkingApp.xcdatamodeld in Sources */,
-				CEB4742725BBFB550066A99C /* ViewController.swift in Sources */,
+				CEB4742725BBFB550066A99C /* PayForParkingViewController.swift in Sources */,
 				CEB4742325BBFB550066A99C /* AppDelegate.swift in Sources */,
 				CEB4742525BBFB550066A99C /* SceneDelegate.swift in Sources */,
 			);
