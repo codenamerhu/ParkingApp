@@ -38,7 +38,7 @@ enum PaymentError: Error {
 
 ### Mock up data - faking data
 
-#### MocUpdata.swift
+#### MockUpData.swift
 
 ```
 func fakeParkedHours() ->  Int {
@@ -48,4 +48,4 @@ func fakeParkedHours() ->  Int {
     }
 ```
 
-An array subscript from '''parkingMinutesArray[]''' is chosen at random, this array contains made up minutes at which the fake vehicle has been parked, results from the '''fakeParkedHours()''' ia later used in '''PayForParkingViewControoler''' to simulate parked time as to allow a demonstraion of paying for the parking
+An array subscript from ```parkingMinutesArray[]``` is chosen at random, this array contains made up minutes at which the fake vehicle has been parked, results from the ```akeParkedHours()``` ia later used in ```PayForParkingViewControoler```to simulate parked time as to allow a demonstraion of paying for the parking

@@ -88,6 +88,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEA7E7B125BE21A20054A19D /* Mockup */ = {
+			isa = PBXGroup;
+			children = (
+				CEB4745325BC604D0066A99C /* MockUpData.swift */,
+			);
+			path = Mockup;
+			sourceTree = "<group>";
+		};
+		CEA7E7B225BE21B90054A19D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEB4742625BBFB550066A99C /* PayForParkingViewController.swift */,
+				CEB4746825BC98FF0066A99C /* PaymentSuccessViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEA7E7B325BE21D60054A19D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CEB4742225BBFB550066A99C /* AppDelegate.swift */,
+				CEB4742425BBFB550066A99C /* SceneDelegate.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CEA7E7B425BE21ED0054A19D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEB4742825BBFB550066A99C /* Main.storyboard */,
+				CEB4743025BBFB5A0066A99C /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CEB4741625BBFB540066A99C = {
 			isa = PBXGroup;
 			children = (
@@ -111,18 +146,15 @@
 		CEB4742125BBFB550066A99C /* ParkingApp */ = {
 			isa = PBXGroup;
 			children = (
-				CEB4742225BBFB550066A99C /* AppDelegate.swift */,
-				CEB4742425BBFB550066A99C /* SceneDelegate.swift */,
-				CEB4742625BBFB550066A99C /* PayForParkingViewController.swift */,
-				CEB4742825BBFB550066A99C /* Main.storyboard */,
+				CEA7E7B425BE21ED0054A19D /* Resources */,
+				CEA7E7B325BE21D60054A19D /* Settings */,
+				CEA7E7B225BE21B90054A19D /* Views */,
+				CEA7E7B125BE21A20054A19D /* Mockup */,
 				CEB4742E25BBFB5A0066A99C /* Assets.xcassets */,
-				CEB4743025BBFB5A0066A99C /* LaunchScreen.storyboard */,
 				CEB4743325BBFB5A0066A99C /* Info.plist */,
 				CEB4742B25BBFB550066A99C /* ParkingApp.xcdatamodeld */,
 				CEB4743A25BC23CE0066A99C /* PaymentError.swift */,
 				CEB4744F25BC2BE40066A99C /* Payment.swift */,
-				CEB4745325BC604D0066A99C /* MockUpData.swift */,
-				CEB4746825BC98FF0066A99C /* PaymentSuccessViewController.swift */,
 				CEB4747325BCD84F0066A99C /* CustomizedUI.swift */,
 			);
 			path = ParkingApp;
