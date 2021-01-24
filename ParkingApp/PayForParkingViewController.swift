@@ -7,34 +7,86 @@
 
 import UIKit
 
+enum Side {
+    case rightSide
+    case leftSide
+    case allSides
+}
+
 class PayForParkingViewController: UIViewController {
     
     let payment = Payment()
     let mock = MockUpdata()
-    var parkedHours = 0.00
+    let custommizeUi = CustomizeUI()
+    var parkedHours = 0
     var amountDeducting = 0.00
     
+    @IBOutlet weak var banner: UIView!
+    @IBOutlet weak var bannerImage: UIImageView!
     @IBOutlet weak var amountPayingTextField: UITextField!
     @IBOutlet weak var pricingStackView: UIStackView!
+    @IBOutlet weak var yButtonConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var twoHrsView: UIView!
+    
+    @IBOutlet weak var errorLabel: UILabel!
+    
+    @IBOutlet weak var parkedhourBg: UIView!
+    @IBOutlet weak var hrsLabel: UILabel!
+    
+    @IBOutlet weak var payButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        configViews()
-        parkedHours = mock.fakeParkedHours()
+        setup()
         
+        print("hours parked \(parkedHours)")
         NotificationCenter.default.addObserver(self, selector: #selector(PayForParkingViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(PayForParkingViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
     
-    func configViews() {
-        self.navigationController?.isNavigationBarHidden = true
-        amountPayingTextField.keyboardType = .numberPad
-        
+    override func viewWillAppear(_ animated: Bool) {
+        self.modalTransitionStyle = .coverVertical
+        setup()
     }
     
+    func setup(){
+        configViews()
+        parkedHours = mock.fakeParkedHours()
+        hrsLabel.text = "\(parkedHours) hr(s)"
+    }
     
+    func configViews() {
+        self.navigationController?.isNavigationBarHidden = true
+        errorLabel.isHidden = true
+        errorLabel.layer.opacity = 0.7
+        
+        amountPayingTextField.keyboardType = .numberPad
+        
+        //pricingStackView.isLayoutMarginsRelativeArrangement = true
+        
+        //pricingStackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+        
+        custommizeUi.cornerRadius(for: banner.layer, with: 25, on: .rightSide)
+        custommizeUi.shadow(for: banner.layer, with: 0.5, with: 10)
+
+        custommizeUi.cornerRadius(for: bannerImage.layer, with: 25, on: .rightSide)
+        custommizeUi.shadow(for: bannerImage.layer, with: 0.5, with: 10)
+        
+        custommizeUi.shadow(for: pricingStackView.layer, with: 0.5, with: 10)
+        custommizeUi.cornerRadius(for: pricingStackView.layer, with: 15, on: .leftSide)
+        
+        custommizeUi.cornerRadius(for: twoHrsView.layer, with: 15, on: .leftSide)
+        
+        parkedhourBg.layer.cornerRadius = parkedhourBg.frame.width / 2
+        custommizeUi.shadow(for: parkedhourBg.layer, with: 0.2, with: 6)
+        
+        custommizeUi.cornerRadius(for: payButton.layer, with: 10, on: .allSides)
+        
+        
+    }
     
     @IBAction func initiatePayment(_ sender: UIButton ) {
         
@@ -44,23 +96,46 @@ class PayForParkingViewController: UIViewController {
             }
             
             if amount == "" {
+                view.endEditing(true)
                 throw PaymentError.emptyFieldError
             }
             
             if Double(amount) == nil {
+                view.endEditing(true)
                 throw PaymentError.invalidValue
             }
             
-            let change = try payment.processPayment(for: Double(amount)!, for: calculateAmountDeducting(for: parkedHours))
+            let change = try payment.processPayment(for: Double(amount)!, for: calculateAmountDeducting(for: Double(parkedHours)))
+            amountPayingTextField.text = ""
+            view.endEditing(true)
             
-            let successViewController = PaymentSuccessViewController()
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let successViewController = storyBoard.instantiateViewController(withIdentifier: "PaymentSuccessViewController") as! PaymentSuccessViewController
+            
             successViewController.change = change
             successViewController.amountpPayed = amount
-            
             self.navigationController?.pushViewController(successViewController, animated: true)
             
         } catch {
-            print(error)
+            print("error \(error)")
+            
+            if error as! PaymentError == PaymentError.emptyFieldError {
+                errorLabel.text = "Amount text field cannot be left empty"
+                
+            }
+            else if error as! PaymentError == PaymentError.invalidValue {
+               errorLabel.text = "Amount entered is invalid"
+               
+           }
+            else if error as! PaymentError == PaymentError.cannotBeZeroError {
+                errorLabel.text = "Amount text field cannot be 0"
+                
+            }else if error as! PaymentError == PaymentError.notEnoughFundsError {
+                errorLabel.text = "Amount is less than required"
+                
+            }
+            errorLabel.isHidden = false
+            view.endEditing(true)
         }
     }
     
@@ -95,7 +170,27 @@ extension PayForParkingViewController {
 
 extension PayForParkingViewController {
     
-    @objc func keyboardWillShow(notification: NSNotification) {}
-    @objc func keyboardWillHide(notification: NSNotification) {}
+    @objc func keyboardWillShow(notification: NSNotification) {
+        
+        guard let userInfo = notification.userInfo else {return}
+        guard let keyboardSize = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {return}
+        let keyboardFrame = keyboardSize.cgRectValue
+        
+        errorLabel.isHidden = true
+        if self.yButtonConstraint.constant <= 10.0 {
+            self.yButtonConstraint.constant += keyboardFrame.height
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        
+        guard let userInfo = notification.userInfo else {return}
+        guard let keyboardSize = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {return}
+        let keyboardFrame = keyboardSize.cgRectValue
+        
+        if self.yButtonConstraint.constant > 10.0 {
+            self.yButtonConstraint.constant -= keyboardFrame.height
+        }
+    }
 
 }

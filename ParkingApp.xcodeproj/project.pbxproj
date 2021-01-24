@@ -20,6 +20,7 @@
 		CEB4745425BC604D0066A99C /* MockUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4745325BC604D0066A99C /* MockUpData.swift */; };
 		CEB4745E25BC89550066A99C /* ParkingHourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4745D25BC89550066A99C /* ParkingHourTests.swift */; };
 		CEB4746925BC98FF0066A99C /* PaymentSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4746825BC98FF0066A99C /* PaymentSuccessViewController.swift */; };
+		CEB4747425BCD8500066A99C /* CustomizedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4747325BCD84F0066A99C /* CustomizedUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		CEB4745D25BC89550066A99C /* ParkingHourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingHourTests.swift; sourceTree = "<group>"; };
 		CEB4745F25BC89550066A99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB4746825BC98FF0066A99C /* PaymentSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessViewController.swift; sourceTree = "<group>"; };
+		CEB4747325BCD84F0066A99C /* CustomizedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				CEB4744F25BC2BE40066A99C /* Payment.swift */,
 				CEB4745325BC604D0066A99C /* MockUpData.swift */,
 				CEB4746825BC98FF0066A99C /* PaymentSuccessViewController.swift */,
+				CEB4747325BCD84F0066A99C /* CustomizedUI.swift */,
 			);
 			path = ParkingApp;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			files = (
 				CEB4743B25BC23CE0066A99C /* PaymentError.swift in Sources */,
 				CEB4742D25BBFB550066A99C /* ParkingApp.xcdatamodeld in Sources */,
+				CEB4747425BCD8500066A99C /* CustomizedUI.swift in Sources */,
 				CEB4742725BBFB550066A99C /* PayForParkingViewController.swift in Sources */,
 				CEB4745425BC604D0066A99C /* MockUpData.swift in Sources */,
 				CEB4742325BBFB550066A99C /* AppDelegate.swift in Sources */,
