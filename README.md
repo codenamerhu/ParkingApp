@@ -51,5 +51,5 @@ func fakeParkedHours() ->  Int {
 An array subscript from ```parkingMinutesArray[]``` is chosen at random, this array contains made up minutes at which the fake vehicle has been parked, results from the ```fakeParkedHours()``` ia later used in ```PayForParkingViewControoler```to simulate parked time as to allow a demonstraion of paying for the parking
 
 
-<img src="Screenshots/1.png" height="280" />
-<img src="Screenshots/2.png" height="280" />
+<img src="Screenshots/1.png" height="480" />
+<img src="Screenshots/2.png" height="480" />
