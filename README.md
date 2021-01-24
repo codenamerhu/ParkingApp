@@ -36,4 +36,4 @@ enum PaymentError: Error {
 }
 ```
 
-## Mick up data - faking data
+## Mock up data - faking data
