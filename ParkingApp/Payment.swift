@@ -12,6 +12,7 @@ protocol PaymentProtocol {
 }
 
 class Payment: PaymentProtocol {
+    
     func processPayment(for amountPaying: Double, for amountDeducting: Double) throws -> String {
         var changeIs = 0.0
         
