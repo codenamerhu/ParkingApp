@@ -36,4 +36,14 @@ enum PaymentError: Error {
 }
 ```
 
-## Mock up data - faking data
+### Mock up data - faking data
+
+#### MocUpdata.swift
+
+```
+func fakeParkedHours() ->  Int {
+        minutesParked = parkingMinutesArray[Int.random(in: 0..<(parkingMinutesArray.count - 1))]
+        let parkingTime = minutesParked / 60
+        return parkingTime
+    }
+```
