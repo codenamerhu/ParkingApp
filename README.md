@@ -14,3 +14,12 @@ processPayment method takes in 2 parameters, ```amountPaying``` which is the amo
 
 ### Error handling
 #### PaymentError.swift
+
+```
+enum PaymentError: Error {
+    case notEnoughFundsError
+    case cannotBeZeroError
+    case emptyFieldError
+    case invalidValue
+}
+```
