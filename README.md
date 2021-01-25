@@ -4,10 +4,12 @@
 ### Requirements
 
 <ul>
-  <li>Bult through XCode 12</li>
+  <li>Built through XCode 12</li>
 </ul>
 
-### asessment's required function 
+simulator build located in "Sumulator App Bundle" folder
+
+### asessment's required function/method
 #### Payment.swift
 
 
