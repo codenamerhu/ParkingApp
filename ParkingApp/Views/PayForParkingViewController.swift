@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AudioToolbox.AudioServices
 
 enum Side {
     case rightSide
@@ -35,6 +36,21 @@ class PayForParkingViewController: UIViewController {
     @IBOutlet weak var hrsLabel: UILabel!
     
     @IBOutlet weak var payButton: UIButton!
+    
+    let vibrate = SystemSoundID(kSystemSoundID_Vibrate)
+    let peek = SystemSoundID(1519)
+
+    // 'Pop' feedback (strong boom)
+    let pop = SystemSoundID(1520)
+
+    // 'Cancelled' feedback (three sequential weak booms)
+    let cancelled = SystemSoundID(1521)
+
+    // 'Try Again' feedback (week boom then strong boom)
+    let tryAgain = SystemSoundID(1102)
+
+    // 'Failed' feedback (three sequential strong booms)
+    let failed = SystemSoundID(1107)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,19 +112,24 @@ class PayForParkingViewController: UIViewController {
             }
             
             if amount == "" {
+                AudioServicesPlaySystemSound(tryAgain)
                 view.endEditing(true)
                 throw PaymentError.emptyFieldError
             }
             
             if Double(amount) == nil {
+                AudioServicesPlaySystemSound(tryAgain)
                 view.endEditing(true)
                 throw PaymentError.invalidValue
             }
+            
+            
             
             let change = try payment.processPayment(for: Double(amount)!, for: calculateAmountDeducting(for: Double(parkedHours)))
             amountPayingTextField.text = ""
             view.endEditing(true)
             
+            AudioServicesPlaySystemSound(pop)
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let successViewController = storyBoard.instantiateViewController(withIdentifier: "PaymentSuccessViewController") as! PaymentSuccessViewController
             
@@ -117,6 +138,7 @@ class PayForParkingViewController: UIViewController {
             self.navigationController?.pushViewController(successViewController, animated: true)
             
         } catch {
+            AudioServicesPlaySystemSound(tryAgain)
             print("error \(error)")
             
             if error as! PaymentError == PaymentError.emptyFieldError {
