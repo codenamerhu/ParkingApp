@@ -1,5 +1,12 @@
 # Parking App
 
+
+### Requirements
+
+<ul>
+  <li>Bult through XCode 12</li>
+</ul>
+
 ### asessment's required function 
 #### Payment.swift
 
