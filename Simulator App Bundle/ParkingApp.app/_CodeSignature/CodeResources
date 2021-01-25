@@ -10,7 +10,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		8wdxPwCRfGq79FzA2OsMQPRPiPU=
+		pGb8Dy4VKKGZQfBw/75nM8t5Ebg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		3NvVKzWxaMa9DZc2np+ePN09E28=
+		VA9b25Wx+fw8GU4+EOd46o50ql0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		761b3TTYe1l9oU8CjiIKJD1Qxxk=
+		gzVAw1Sudt0klM+yLyD9qh5s42E=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/PayForParkingViewController.nib</key>
 		<data>
-		VM4I7k+X28uPkOZBvrhkbxfQOTo=
+		MOf/Y0gfjbTlEbFcoRsaTbAbUPQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/PaymentSuccessViewController.nib</key>
 		<data>
-		kNIkMmd08TNLJCI3h7qd/TWJo5c=
+		JmJgVBiR2vx5Y5I4xb4iSlVv8j0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-74z-O8-EQv.nib</key>
 		<data>
-		+Ierj9VsyH+P3ddLaMbb0xs2jZk=
+		HeplXmsMCrTOwqLqMgDKFokL74I=
 		</data>
 		<key>Base.lproj/Main.storyboardc/VFC-Lq-p5j-view-pAz-kb-U0P.nib</key>
 		<data>
-		o7GQHN3a0u2WmUIKjQfzR0firHk=
+		s6KaqaOO2FuCTMtl1uX+6jW7FdE=
 		</data>
 		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>PlugIns/ParkingAppTests.xctest/ParkingAppTests</key>
 		<data>
-		/IY/o4G74oxaK4b6LCjkY4Ptg34=
+		F9KXbHpaM+dTcnJaCSqlU+pAeCs=
 		</data>
 		<key>PlugIns/ParkingAppTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>PlugIns/ParkingHourTests.xctest/ParkingHourTests</key>
 		<data>
-		56I3QsAZ6Aoiqo4bU60E4JLyIlE=
+		jEutEMzD4MaS8An2aCMw4Y/8aFU=
 		</data>
 		<key>PlugIns/ParkingHourTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
@@ -142,7 +142,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hKJdAjWaCbdF2pQ/3zYgN3rVcqu/6SfQ4OkSsdt5pfQ=
+			Rtep3PlTfike+S7N+hQPkLgEPPmLe3buw2nhulq2uEg=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -156,14 +156,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L4cBNu30rAoi1ZPUCniOA7gAdOhagRuvLkhR1LxwHvw=
+			cQ4Fb2Oah7zfH7XUF4AWJJrwRiozBptaWPPdH9U2L4M=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gWlpiL9w/nMeMi+6H2OsfY+O9b1/hgFE+BhtdhkJaCY=
+			cSpkkO3gKULNDEFH3VHzqGH3Wj+kKprmw781ltWgxWs=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -177,28 +177,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			li8ats2lBVD95INUb+SwTMB+nAzV7dw/Qiauft1hHu8=
+			9kikNrYDq40xR+jqEEtA7EyjXnxoafLZAIcBXFPivCo=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/PaymentSuccessViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uEy79K63r6+jEo9GGHHEASXToEKOA/w+4HqA1HThby0=
+			2pYhy2M0T3jQ7SQWrnRPsRXxNn/KIKT3bqQbO6ZYbLw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-74z-O8-EQv.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NMMuCDcVWesnKt5A5Ihta94pMLjsEt+D8wNpnJCgBHE=
+			mOFJ/4C4gRcbIaE/ps5rQiyPm0IgKO/pDSaZgqRsQUo=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/VFC-Lq-p5j-view-pAz-kb-U0P.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OhPcLX4uIzRYxOmIF1uitiuykobJLrVaWbXtXrq/YGw=
+			ds+8ojwksb86AkVj1oXoSGoKI8Xm1gSm/M4Td2Hyo5A=
 			</data>
 		</dict>
 		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
@@ -303,7 +303,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q2JO/vmjcGc5suZ4IUx4HS3n/4Scjr+upD0GEbaPnQ0=
+			tIZUsY8Bctj6/7xPtbdqWyLr4MFRBsS/DuBKSgFoNX0=
 			</data>
 		</dict>
 		<key>PlugIns/ParkingAppTests.xctest/_CodeSignature/CodeResources</key>
@@ -324,7 +324,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Urz+HXE3CRvI6gbP54rPLjrgYZYu9StABjMtjnm5B00=
+			VET8ysYJozNxznyt4WX4sPf/Nz/d//E0kSsc04rzZhU=
 			</data>
 		</dict>
 		<key>PlugIns/ParkingHourTests.xctest/_CodeSignature/CodeResources</key>
