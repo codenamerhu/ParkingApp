@@ -55,5 +55,10 @@ An array subscript from ```parkingMinutesArray[]``` is chosen at random, this ar
 #### PayForParkingViewController
 <img src="Screenshots/1.png" height="480" />
 
+Hour/time of parked is chosen at random and app allows user to pay for parking, the purple circle on the upper right of the shows how long the user has been parked
+
+<img src="Screenshots/3.png" height="460" />
+the image above shows the price to be paid for parking
+
 #### PaymentSuccessViewController
 <img src="Screenshots/2.png" height="480" />
